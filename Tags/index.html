@@ -19,6 +19,28 @@
 			HTML Standard
 		</a>
 
+		<!-- ^ Символи мнемоніки: -->
+		<!-- Виклик &мнемокод; - вставлення символу за його «мнемокодом», тобто іменем. Наприклад, &copy; для © -->
+		<!-- Виклик &#КОД10; - вставлення символу за його десятковим кодом. Наприклад, &#169; для © -->
+		<!-- Виклик &#xКОД16; - вставлення символу за його шістнадцятковим кодом. Наприклад, &#xa9; для © -->
+		<!-- Символи для дужок html тегів ( "<" та ">" ) - це &lt; та &gt; -->
+		<a
+			href="https://html.spec.whatwg.org/multipage/named-characters.html"
+			target="_blank"
+			title="офіційна сторінка спец символів W3C"
+			rel="noreferrer noopener"
+		>
+			офіційна сторінка W3C
+		</a>
+		<a
+			href="https://www.toptal.com/designers/htmlarrows/symbols/"
+			target="_blank"
+			title="сервіс спец символів від Toptal"
+			rel="noreferrer noopener"
+		>
+			сервіс від Toptal
+		</a>
+
 		<!-- ^ Tags of head section -->
 		<!-- lang - if page have text with several languages you can use attribute "lang" not only in "head" section: -->
 		<p>Operating instructions</p>
@@ -115,5 +137,65 @@
 		<!-- ^ Button Tag Attributes -->
 		<button type="button">Відкрити модальне вікно</button>
 		<!-- type - by default it is submit -->
+
+		<!-- ^ Tag <dl> & <dd> -->
+		<dl>
+			<dt>JPEG</dt>
+			<dd>
+				Large files that do not require transparent backgrounds or animations. This format is ideal for vivid
+				photorealistic photographs as it can contain millions of colors.
+			</dd>
+
+			<dt>PNG</dt>
+			<dd>
+				Has an additional parameter for describing transparency - the alpha channel. Suitable for images with
+				transparent or monochrome backgrounds. Used for icons and decorative items.
+			</dd>
+
+			<dt>webP</dt>
+			<dd>
+				A replacement format for PNG and JPEG, but with incomplete browser support. When equal image quality, the
+				compressed files will be smaller than PNG and JPEG on average by 25%.
+			</dd>
+		</dl>
+
+		<!-- ^ Tag <pre> -->
+		<!-- Дозволяє робити примусові переноси (за замовчуванням браузер їх не дозволяє) -->
+		<pre>
+  	Wyatt resteth here, that quick could never rest;
+  	Whose heavenly gifts increased by disdain,
+  	And virtue sank the deeper in his breast;
+  	Such profit he by envy could obtain.
+  	</pre
+		>
+
+		<pre>
+  A head where wisdom mysteries did frame,
+  Whose hammers beat still in that lively brain
+  As on a stithy where that some work of fame
+  Was daily wrought, to turn to Britain's gain.
+  </pre
+		>
+
+		<!-- ^ Tag <sup> & <sub> -->
+		<!-- для відображення символів у верхньому (<sup>, скорочено від superscript) і нижньому (<sub>, скорочено від subscript) індексі. -->
+		<p>
+			Formula of water - H
+			<sub>2</sub>
+			O
+		</p>
+		<p>
+			Total area of the room - 150м
+			<sup>2</sup>
+			.
+		</p>
+
+		<p>
+			Solve the equation a
+			<sup>3</sup>
+			+a
+			<sup>2</sup>
+			=4
+		</p>
 	</body>
 </html>
