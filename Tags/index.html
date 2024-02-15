@@ -12,190 +12,211 @@
 
 		<!-- Page title in browser (max 60 symbols) -->
 		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!-- ^ HTML Standard -->
-		<a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="HTML Standard" rel="noreferrer noopener">
-			HTML Standard
-		</a>
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+				<a class="main-link" href="../Audio&Video/index.html">To Audio and Video</a>
+				<a class="main-link" href="../structure/index.html">To Structure</a>
+				<a class="main-link" href="../tables/index.html">To Tables</a>
+				<a class="main-link" href="../Tags/index.html">To Tags</a>
+				<a class="main-link" href="../x-hw-01/">To hw-01</a>
+				<a class="main-link" href="../images-examples/index.html">To images examples</a>
+			</div>
+		</header>
+		<main>
+			<!-- ^ HTML Standard -->
+			<a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="HTML Standard" rel="noreferrer noopener">
+				HTML Standard
+			</a>
 
-		<!-- ^ Символи мнемоніки: -->
-		<!-- Виклик &мнемокод; - вставлення символу за його «мнемокодом», тобто іменем. Наприклад, &copy; для © -->
-		<!-- Виклик &#КОД10; - вставлення символу за його десятковим кодом. Наприклад, &#169; для © -->
-		<!-- Виклик &#xКОД16; - вставлення символу за його шістнадцятковим кодом. Наприклад, &#xa9; для © -->
-		<!-- Символи для дужок html тегів ( "<" та ">" ) - це &lt; та &gt; -->
-		<a
-			href="https://html.spec.whatwg.org/multipage/named-characters.html"
-			target="_blank"
-			title="офіційна сторінка спец символів W3C"
-			rel="noreferrer noopener"
-		>
-			офіційна сторінка W3C
-		</a>
-		<a
-			href="https://www.toptal.com/designers/htmlarrows/symbols/"
-			target="_blank"
-			title="сервіс спец символів від Toptal"
-			rel="noreferrer noopener"
-		>
-			сервіс від Toptal
-		</a>
+			<!-- ^ Символи мнемоніки: -->
+			<!-- Виклик &мнемокод; - вставлення символу за його «мнемокодом», тобто іменем. Наприклад, &copy; для © -->
+			<!-- Виклик &#КОД10; - вставлення символу за його десятковим кодом. Наприклад, &#169; для © -->
+			<!-- Виклик &#xКОД16; - вставлення символу за його шістнадцятковим кодом. Наприклад, &#xa9; для © -->
+			<!-- Символи для дужок html тегів ( "<" та ">" ) - це &lt; та &gt; -->
+			<a
+				href="https://html.spec.whatwg.org/multipage/named-characters.html"
+				target="_blank"
+				title="офіційна сторінка спец символів W3C"
+				rel="noreferrer noopener"
+			>
+				офіційна сторінка W3C
+			</a>
+			<a
+				href="https://www.toptal.com/designers/htmlarrows/symbols/"
+				target="_blank"
+				title="сервіс спец символів від Toptal"
+				rel="noreferrer noopener"
+			>
+				сервіс від Toptal
+			</a>
 
-		<!-- ^ Tags of head section -->
-		<!-- lang - if page have text with several languages you can use attribute "lang" not only in "head" section: -->
-		<p>Operating instructions</p>
-		<p lang="uk">Operating instructions</p>
-		<p lang="fr">Manuel d'utilisation</p>
+			<!-- ^ Tags of head section -->
+			<!-- lang - if page have text with several languages you can use attribute "lang" not only in "head" section: -->
+			<p>Operating instructions</p>
+			<p lang="uk">Operating instructions</p>
+			<p lang="fr">Manuel d'utilisation</p>
 
-		<!-- ^ Link Tag Attributes-->
-		<!-- href - required. URL can points to page, file or any other source -->
-		<!-- href has special attributes for call or emailing instead open or load file: -->
-		<a href="tel:+14251234563">+1 (425) 123-45-63</a>
-		<a href="mailto:example@mail.ua">example@mail.ua</a>
+			<!-- ^ Link Tag Attributes-->
+			<!-- href - required. URL can points to page, file or any other source -->
+			<!-- href has special attributes for call or emailing instead open or load file: -->
+			<a href="tel:+14251234563">+1 (425) 123-45-63</a>
+			<a href="mailto:example@mail.ua">example@mail.ua</a>
 
-		<!-- # / id="" - link anchor for scroll page without reloading: -->
-		<a href="#contacts">Connect with us</a>
-		<!-- ... -->
-		<h2 id="contacts">Our contacts</h2>
+			<!-- # / id="" - link anchor for scroll page without reloading: -->
+			<a href="#contacts">Connect with us</a>
+			<!-- ... -->
+			<h2 id="contacts">Our contacts</h2>
 
-		<!-- target="_blank" - opens link on new page (otherwise, by default, on the same one) -->
-		<!-- title - adds a pop-up tooltip to the link text -->
-		<!-- rel - extends the href attribute with information about relationship between current and linked document, and is used in pair with target="_blank" -->
-		<!-- download="file name" - tells to the browser not to open the element in current page, but download it with name "file name". If yu don't specify the value, it will loads with source file name. -->
+			<!-- target="_blank" - opens link on new page (otherwise, by default, on the same one) -->
+			<!-- title - adds a pop-up tooltip to the link text -->
+			<!-- rel - extends the href attribute with information about relationship between current and linked document, and is used in pair with target="_blank" -->
+			<!-- download="file name" - tells to the browser not to open the element in current page, but download it with name "file name". If yu don't specify the value, it will loads with source file name. -->
 
-		<a
-			href="https://html.spec.whatwg.org/multipage/#toc-semantics"
-			target="_blank"
-			title="HTML Elements"
-			rel="noreferrer noopener"
-		>
-			Elements
-		</a>
+			<a
+				href="https://html.spec.whatwg.org/multipage/#toc-semantics"
+				target="_blank"
+				title="HTML Elements"
+				rel="noreferrer noopener"
+			>
+				Elements
+			</a>
 
-		<a href="https://htmlreference.io/" target="_blank" title="All available tag attributes" rel="noreferrer noopener">
-			Tag attributes
-		</a>
-		<a href="https://cssreference.io/" target="_blank" title="CSS properties reference" rel="noreferrer noopener">
-			CSS properties reference
-		</a>
+			<a
+				href="https://htmlreference.io/"
+				target="_blank"
+				title="All available tag attributes"
+				rel="noreferrer noopener"
+			>
+				Tag attributes
+			</a>
+			<a href="https://cssreference.io/" target="_blank" title="CSS properties reference" rel="noreferrer noopener">
+				CSS properties reference
+			</a>
 
-		<!-- ^ Images Tag Attributes -->
-		<img src="https://picsum.photos/640/480" alt="cute cat" width="400" />
-		<!-- src - required. Image link address (can be absolute or relative) -->
-		<!-- alt - required. must be unique. alternative text, that will be displayed if the image doesn't load.  -->
-		<!-- width="value" height="value" - set image dimensions. If specify only one value, the browser will automatically calculate other keep proportions  -->
+			<!-- ^ Images Tag Attributes -->
+			<img src="https://picsum.photos/640/480" alt="cute cat" width="400" />
+			<!-- src - required. Image link address (can be absolute or relative) -->
+			<!-- alt - required. must be unique. alternative text, that will be displayed if the image doesn't load.  -->
+			<!-- width="value" height="value" - set image dimensions. If specify only one value, the browser will automatically calculate other keep proportions  -->
 
-		<!-- Image as link: -->
-		<a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
-			<img
-				src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
-				alt="Рудий кіт"
-				width="640"
-			/>
-		</a>
+			<!-- Image as link: -->
+			<a href="https://www.pexels.com/photo/animals-sweet-cat-kitty-57416/">
+				<img
+					src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?w=640"
+					alt="Рудий кіт"
+					width="640"
+				/>
+			</a>
 
-		<!-- Image with caption: -->
-		<!-- figcaption - must be first or last child of "figure" -->
-		<figure>
-			<img src="адреса зображення" alt="альтернативний текст" />
-			<figcaption>Текст пояснення, який буде під зображенням</figcaption>
-		</figure>
+			<!-- Image with caption: -->
+			<!-- figcaption - must be first or last child of "figure" -->
+			<figure>
+				<img src="адреса зображення" alt="альтернативний текст" />
+				<figcaption>Текст пояснення, який буде під зображенням</figcaption>
+			</figure>
 
-		<!-- ~ img optimization -->
-		<!-- progressive jpeg much user-friendly during loading -->
-		<a
-			href="https://squoosh.app/"
-			target="_blank"
-			title="Squoosh для оптимізації растрової графіки"
-			rel="noreferrer noopener"
-		>
-			Squoosh для оптимізації растрової графіки
-		</a>
-		<a
-			href="https://jakearchibald.github.io/svgomg/"
-			target="_blank"
-			title="SVGOMG для оптимізації векторної графіки"
-			rel="noreferrer noopener"
-		>
-			SVGOMG для оптимізації векторної графіки
-		</a>
+			<!-- ~ img optimization -->
+			<!-- progressive jpeg much user-friendly during loading -->
+			<a
+				href="https://squoosh.app/"
+				target="_blank"
+				title="Squoosh для оптимізації растрової графіки"
+				rel="noreferrer noopener"
+			>
+				Squoosh для оптимізації растрової графіки
+			</a>
+			<a
+				href="https://jakearchibald.github.io/svgomg/"
+				target="_blank"
+				title="SVGOMG для оптимізації векторної графіки"
+				rel="noreferrer noopener"
+			>
+				SVGOMG для оптимізації векторної графіки
+			</a>
 
-		<input type="text" name="user_name" />
-		<button type="submit">...</button>
-		<p class="text">...</p>
+			<input type="text" name="user_name" />
+			<button type="submit">...</button>
+			<p class="text">...</p>
 
-		<a
-			href="https://developers.google.com/search/docs/crawling-indexing/special-tags?visit_id=638418729637605389-3162770620&rd=1"
-			target="_blank"
-			title="Meta tags that Google understands"
-		>
-			Google meta tags
-		</a>
+			<a
+				href="https://developers.google.com/search/docs/crawling-indexing/special-tags?visit_id=638418729637605389-3162770620&rd=1"
+				target="_blank"
+				title="Meta tags that Google understands"
+			>
+				Google meta tags
+			</a>
 
-		<!-- В редакторі VSCode, в HTML-документі можна набрати код lorem10, після чого натиснути клавішу Tab. Це створить масив тексту з 10 слів. Замість 10 можна поставити будь-яке число. -->
+			<!-- В редакторі VSCode, в HTML-документі можна набрати код lorem10, після чого натиснути клавішу Tab. Це створить масив тексту з 10 слів. Замість 10 можна поставити будь-яке число. -->
 
-		<!-- ^ Button Tag Attributes -->
-		<button type="button">Відкрити модальне вікно</button>
-		<!-- type - by default it is submit -->
+			<!-- ^ Button Tag Attributes -->
+			<button type="button">Відкрити модальне вікно</button>
+			<!-- type - by default it is submit -->
 
-		<!-- ^ Tag <dl> & <dd> -->
-		<dl>
-			<dt>JPEG</dt>
-			<dd>
-				Large files that do not require transparent backgrounds or animations. This format is ideal for vivid
-				photorealistic photographs as it can contain millions of colors.
-			</dd>
+			<!-- ^ Tag <dl> & <dd> -->
+			<dl>
+				<dt>JPEG</dt>
+				<dd>
+					Large files that do not require transparent backgrounds or animations. This format is ideal for vivid
+					photorealistic photographs as it can contain millions of colors.
+				</dd>
 
-			<dt>PNG</dt>
-			<dd>
-				Has an additional parameter for describing transparency - the alpha channel. Suitable for images with
-				transparent or monochrome backgrounds. Used for icons and decorative items.
-			</dd>
+				<dt>PNG</dt>
+				<dd>
+					Has an additional parameter for describing transparency - the alpha channel. Suitable for images with
+					transparent or monochrome backgrounds. Used for icons and decorative items.
+				</dd>
 
-			<dt>webP</dt>
-			<dd>
-				A replacement format for PNG and JPEG, but with incomplete browser support. When equal image quality, the
-				compressed files will be smaller than PNG and JPEG on average by 25%.
-			</dd>
-		</dl>
+				<dt>webP</dt>
+				<dd>
+					A replacement format for PNG and JPEG, but with incomplete browser support. When equal image quality, the
+					compressed files will be smaller than PNG and JPEG on average by 25%.
+				</dd>
+			</dl>
 
-		<!-- ^ Tag <pre> -->
-		<!-- Дозволяє робити примусові переноси (за замовчуванням браузер їх не дозволяє) -->
-		<pre>
+			<!-- ^ Tag <pre> -->
+			<!-- Дозволяє робити примусові переноси (за замовчуванням браузер їх не дозволяє) -->
+			<pre>
   	Wyatt resteth here, that quick could never rest;
   	Whose heavenly gifts increased by disdain,
   	And virtue sank the deeper in his breast;
   	Such profit he by envy could obtain.
   	</pre
-		>
+			>
 
-		<pre>
+			<pre>
   A head where wisdom mysteries did frame,
   Whose hammers beat still in that lively brain
   As on a stithy where that some work of fame
   Was daily wrought, to turn to Britain's gain.
   </pre
-		>
+			>
 
-		<!-- ^ Tag <sup> & <sub> -->
-		<!-- для відображення символів у верхньому (<sup>, скорочено від superscript) і нижньому (<sub>, скорочено від subscript) індексі. -->
-		<p>
-			Formula of water - H
-			<sub>2</sub>
-			O
-		</p>
-		<p>
-			Total area of the room - 150м
-			<sup>2</sup>
-			.
-		</p>
+			<!-- ^ Tag <sup> & <sub> -->
+			<!-- для відображення символів у верхньому (<sup>, скорочено від superscript) і нижньому (<sub>, скорочено від subscript) індексі. -->
+			<p>
+				Formula of water - H
+				<sub>2</sub>
+				O
+			</p>
+			<p>
+				Total area of the room - 150м
+				<sup>2</sup>
+				.
+			</p>
 
-		<p>
-			Solve the equation a
-			<sup>3</sup>
-			+a
-			<sup>2</sup>
-			=4
-		</p>
+			<p>
+				Solve the equation a
+				<sup>3</sup>
+				+a
+				<sup>2</sup>
+				=4
+			</p>
+		</main>
+		<footer></footer>
 	</body>
 </html>

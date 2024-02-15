@@ -4,61 +4,77 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!-- ^ Video -->
-		<video
-			src="http://techslides.com/demos/sample-videos/small.webm"
-			poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
-			width="640"
-			controls
-			autoplay
-			loop
-			preload="auto"
-		></video>
-		<!-- src - вказує адресу відеофайлу -->
-		<!-- poster - адреса зображення, яке використовується як постер, якщо відео завантажене або ще не відтворюється -->
-		<!-- width і height - задають висоту і ширину як у зображення -->
-		<!-- controls - атрибут-прапорець, якщо присутній, додаються елементи управління відео -->
-		<!-- autoplay - атрибут-прапорець, якщо присутній, відтворення відео починається як тільки воно доступне -->
-		<!-- loop - атрибут-прапорець, якщо присутній, відео буде повторюватися в циклі -->
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+				<a class="main-link" href="../Audio&Video/index.html">To Audio and Video</a>
+				<a class="main-link" href="../structure/index.html">To Structure</a>
+				<a class="main-link" href="../tables/index.html">To Tables</a>
+				<a class="main-link" href="../Tags/index.html">To Tags</a>
+				<a class="main-link" href="../x-hw-01/">To hw-01</a>
+				<a class="main-link" href="../images-examples/index.html">To images examples</a>
+			</div>
+		</header>
+		<main>
+			<!-- ^ Video -->
+			<video
+				src="http://techslides.com/demos/sample-videos/small.webm"
+				poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+				width="640"
+				controls
+				autoplay
+				loop
+				preload="auto"
+			></video>
+			<!-- src - вказує адресу відеофайлу -->
+			<!-- poster - адреса зображення, яке використовується як постер, якщо відео завантажене або ще не відтворюється -->
+			<!-- width і height - задають висоту і ширину як у зображення -->
+			<!-- controls - атрибут-прапорець, якщо присутній, додаються елементи управління відео -->
+			<!-- autoplay - атрибут-прапорець, якщо присутній, відтворення відео починається як тільки воно доступне -->
+			<!-- loop - атрибут-прапорець, якщо присутній, відео буде повторюватися в циклі -->
 
-		<!-- Атрибут preload вказує режим попереднього завантаження відео. Його значення впливає на те, яка інформація буде завантажена. Значення за замовчуванням залежить від браузера, в якому була відкрита веб-сторінка. -->
-		<!-- none - не завантажувати відео заздалегідь -->
-		<!-- metadata - завантажити службову інформацію (тривалість тощо) -->
-		<!-- auto - заздалегідь завантажувати всі відео -->
+			<!-- Атрибут preload вказує режим попереднього завантаження відео. Його значення впливає на те, яка інформація буде завантажена. Значення за замовчуванням залежить від браузера, в якому була відкрита веб-сторінка. -->
+			<!-- none - не завантажувати відео заздалегідь -->
+			<!-- metadata - завантажити службову інформацію (тривалість тощо) -->
+			<!-- auto - заздалегідь завантажувати всі відео -->
 
-		<!-- Якщо треба вказати різні формати відео (різні файли) для різних браузерів, то замість тегу src, використовуємо додатковий тег <source>  -->
-		<!-- В кінці повідомлення, якщо браузер старий і не знає таких форматів -->
-		<video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
-			<source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
-			<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
-			<source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg" />
-			Your browser does not support the
-			<code>video</code>
-			element.
-		</video>
+			<!-- Якщо треба вказати різні формати відео (різні файли) для різних браузерів, то замість тегу src, використовуємо додатковий тег <source>  -->
+			<!-- В кінці повідомлення, якщо браузер старий і не знає таких форматів -->
+			<video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls>
+				<source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
+				<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+				<source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg" />
+				Your browser does not support the
+				<code>video</code>
+				element.
+			</video>
 
-		<!-- ^ Audio -->
+			<!-- ^ Audio -->
 
-		<audio src="song.mp3" controls autoplay loop preload="auto"></audio>
-		<!-- src - вказує адресу аудіофайлу -->
-		<!-- controls - атрибут-прапорець, якщо присутній, додаються елементи управління аудіо -->
-		<!-- autoplay - атрибут-прапорець, якщо присутній, відтворення аудіо починається як тільки воно доступне -->
-		<!-- loop - атрибут-прапорець, якщо присутній, аудіо буде повторюватися в циклі -->
+			<audio src="song.mp3" controls autoplay loop preload="auto"></audio>
+			<!-- src - вказує адресу аудіофайлу -->
+			<!-- controls - атрибут-прапорець, якщо присутній, додаються елементи управління аудіо -->
+			<!-- autoplay - атрибут-прапорець, якщо присутній, відтворення аудіо починається як тільки воно доступне -->
+			<!-- loop - атрибут-прапорець, якщо присутній, аудіо буде повторюватися в циклі -->
 
-		<!-- Атрибут preload вказує режим попереднього завантаження аудіофайлу. Його значення впливає на те, яка інформація буде завантажена. Значення за замовчуванням залежить від браузера, в якому була відкрита веб-сторінка. -->
-		<!-- none - не завантажувати аудіо заздалегідь -->
-		<!-- metadata - завантажити службову інформацію (тривалість тощо) -->
-		<!-- auto - заздалегідь завантажувати увесь аудіофайл -->
+			<!-- Атрибут preload вказує режим попереднього завантаження аудіофайлу. Його значення впливає на те, яка інформація буде завантажена. Значення за замовчуванням залежить від браузера, в якому була відкрита веб-сторінка. -->
+			<!-- none - не завантажувати аудіо заздалегідь -->
+			<!-- metadata - завантажити службову інформацію (тривалість тощо) -->
+			<!-- auto - заздалегідь завантажувати увесь аудіофайл -->
 
-		<!-- Різні формати: -->
-		<audio controls>
-			<source src="song.mp3" type="audio/mpeg" />
-			<source src="song.ogg" type="audio/ogg" />
-			Your browser does not support the
-			<code>audio</code>
-			element.
-		</audio>
+			<!-- Різні формати: -->
+			<audio controls>
+				<source src="song.mp3" type="audio/mpeg" />
+				<source src="song.ogg" type="audio/ogg" />
+				Your browser does not support the
+				<code>audio</code>
+				element.
+			</audio>
+		</main>
+		<footer></footer>
 	</body>
 </html>

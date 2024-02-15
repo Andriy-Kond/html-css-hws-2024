@@ -1,0 +1,16 @@
+/* Main Index.html */
+.main-box {
+	display: flex;
+
+	gap: 20px;
+}
+
+.main-link {
+	display: flex;
+
+	width: fit-content;
+	padding: 10px;
+	border-radius: 10px;
+
+	background-color: orange;
+}
