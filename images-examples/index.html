@@ -21,6 +21,18 @@
 		</header>
 		<main>
 			<!-- Під фоновими зображеннями має бути вказаний колір фону - якщо зображення не завантажиться, то буде хоча б якийсь фон і буде видно білий текст -->
+
+			<!-- Контентні зображення через <img>, фонові і оформлення - через ::before чи sprite-svg -->
+
+			<!-- Через ::before{background-image} - якщо НЕ потрібна інтерактивність (наприклад, змінювати колір при ховері) -->
+
+			<!-- Якщо потрібна інтерактивність зображення - sprite-svg чи inline-svg, але не через тег <img> -->
+
+			<!-- Зазвичай інтерактивність робиться на іконках і робиться через SVG-sprite -->
+
+			<!-- SVG у тезі <img> чи як фон елементу (background-image у CSS) підходять для статики -->
+
+			<!--* different bg images -->
 			<!-- <div class="container">
 				<div class="box"></div>
 				<div class="box"></div>
@@ -28,7 +40,40 @@
 				<div class="box"></div>
 			</div> -->
 
-			<div class="overlay"></div>
+			<!--* overlay -->
+			<!-- <div class="overlay"></div> -->
+
+			<!--* Icon on btn  -->
+			<!-- <a href="" class="button">
+				Швидкий старт
+			</a> -->
+
+			<!--* List + icon  -->
+			<ul class="list">
+				<li class="list-item">
+					<h2 class="title">Lorem ipsum dolor!</h2>
+					<p class="text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laborum modi sit aperiam nemo quis illo
+						veniam qui aliquid odit officiis, neque tempora ipsum alias saepe cum optio quo eligendi!
+					</p>
+				</li>
+
+				<li class="list-item icon-picachu">
+					<h2 class="title">Lorem ipsum dolor!</h2>
+					<p class="text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laborum modi sit aperiam nemo quis illo
+						veniam qui aliquid odit officiis, neque tempora ipsum alias saepe cum optio quo eligendi!
+					</p>
+				</li>
+
+				<li class="list-item icon-sheep">
+					<h2 class="title">Lorem ipsum dolor!</h2>
+					<p class="text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, laborum modi sit aperiam nemo quis illo
+						veniam qui aliquid odit officiis, neque tempora ipsum alias saepe cum optio quo eligendi!
+					</p>
+				</li>
+			</ul>
 		</main>
 		<footer></footer>
 	</body>
