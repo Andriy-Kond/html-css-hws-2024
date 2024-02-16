@@ -43,3 +43,16 @@
 	background-position: 50% 50%;
 	background-size: cover;
 }
+
+.overlay {
+	height: 480px;
+	max-width: 1200px;
+	outline: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("../images/fantasy-island.jpg");
+	background-size: cover;
+	background-position: top center;
+}
