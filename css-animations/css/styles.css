@@ -1,7 +1,192 @@
-p {
-	white-space: nowrap;
+/* Оголошення анімації */
+@keyframes changeBgColor {
+	0% {
+		background-color: teal;
+	}
+
+	50% {
+		background-color: orange;
+	}
+
+	100% {
+		background-color: deepskyblue;
+	}
 }
 
-a {
-	white-space: nowrap;
+/* animation-duration */
+.box {
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Adds animation when hovering. */
+.box:hover {
+	animation-name: changeBgColor;
+	animation-duration: 3000ms;
+}
+
+/* animation-iteration-count */
+img {
+	animation-name: spin;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* animation-direction */
+.container-box-02 {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.box-02 {
+	width: 150px;
+	padding: 4px 8px;
+	border: 2px solid #212121;
+	border-radius: 4px;
+	text-align: center;
+
+	animation-name: move;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.box-02:nth-child(1) {
+	animation-direction: normal;
+	background-color: #3f51b5;
+}
+
+.box-02:nth-child(2) {
+	animation-direction: reverse;
+	background-color: #f57c00;
+}
+
+.box-02:nth-child(3) {
+	animation-direction: alternate;
+	background-color: #009688;
+}
+
+.box-02:nth-child(4) {
+	animation-direction: alternate-reverse;
+	background-color: #e91e63;
+}
+
+@keyframes move {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(300%);
+	}
+}
+
+/* animation-fill-mode */
+
+.container {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.box-03 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #212121;
+	border-radius: 5px;
+	background-color: #fff;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.box-03:hover {
+	animation-name: changeBgColor-03;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+}
+
+.box-03:nth-child(1) {
+	/* Default value  */
+	animation-fill-mode: none;
+}
+
+.box-03:nth-child(2) {
+	animation-fill-mode: forwards;
+}
+
+.box-03:nth-child(3) {
+	animation-fill-mode: backwards;
+}
+
+.box-03:nth-child(4) {
+	animation-fill-mode: both;
+}
+
+@keyframes changeBgColor-03 {
+	0% {
+		background-color: teal;
+	}
+
+	50% {
+		background-color: orange;
+	}
+
+	100% {
+		background-color: deepskyblue;
+	}
+}
+
+/* animation-play-state */
+.box-04 {
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+	animation-name: changeBgColor-04;
+	animation-duration: 3000ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/* Pause animation on hover */
+.box-04:hover {
+	animation-play-state: paused;
+}
+
+@keyframes changeBgColor-04 {
+	0% {
+		background-color: deeppink;
+	}
+
+	50% {
+		background-color: orange;
+	}
+
+	100% {
+		background-color: deepskyblue;
+	}
 }

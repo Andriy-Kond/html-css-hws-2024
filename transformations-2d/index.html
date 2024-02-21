@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+			</div>
+		</header>
+		<main>
+			<section>
+				<h1>2D-трансформації</h1>
+
+				<p>
+					Трансформації змінюють форму і положення елемента, не впливаючи на інші елементи сторінки. За замовчуванням трансформація відбувається щодо центру елемента, але це можна
+					змінити.
+				</p>
+				<h2>Властивість transform</h2>
+				<p>Відповідає за застосування однієї або більше трансформації до елемента.</p>
+				<p>transform: none | <тип трансформації> <тип трансформації> ...</p>
+			</section>
+
+			<section>
+				<h2>Масштабування</h2>
+				<div class="container">
+					<div class="box"></div>
+					<div class="box"></div>
+					<div class="box"></div>
+				</div>
+			</section>
+			<section>
+				<h2>Поворот</h2>
+				<p>Значення можна передати не тільки в градусах, а й в «оборотах» (одиниця turn). Наприклад, rotate(0.5turn) - це половина обороту, аналог rotate(180deg).</p>
+				<div class="container">
+					<div class="box-02"></div>
+					<div class="box-02"></div>
+					<div class="box-02"></div>
+				</div>
+			</section>
+			<section>
+				<h2>Зміщення</h2>
+				<div class="container">
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Центрування елемента</h2>
+				<pre>
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+				</pre
+				>
+
+				<div class="parent">
+					<div class="box-04"></div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Точка трансформації</h2>
+				<p>
+					Властивість transform-origin дозволяє змістити точку трансформації, щодо якої відбувається зміна положення, розміру або форми елемента. Значення за замовчуванням —
+					center, або 50% 50%. Задається лише для трансформованих елементів. Не наслідується.
+				</p>
+				<p>Значення можна вказувати не тільки ключовими словами, а також в пікселях або відсотках.</p>
+
+				<div class="container-05">
+					<div class="box-05">top left</div>
+					<div class="box-05">top center</div>
+					<div class="box-05">top right</div>
+					<div class="box-05">center left</div>
+					<div class="box-05">center center</div>
+					<div class="box-05">center right</div>
+					<div class="box-05">bottom left</div>
+					<div class="box-05">bottom center</div>
+					<div class="box-05">bottom right</div>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>

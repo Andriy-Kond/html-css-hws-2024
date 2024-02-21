@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+			</div>
+		</header>
+		<main>
+			<section>
+				<h2>Обертання у 2D просторі:</h2>
+				<div class="container">
+					<div class="scene">
+						<div class="box rotate-x">rotateX(60deg)</div>
+					</div>
+
+					<div class="scene">
+						<div class="box rotate-y">rotateY(60deg)</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Функція perspective()</h2>
+
+				<p>perspective(400px): 400 - глибина від сцени</p>
+				<p>Що менше значення, то ближче глядач до сцени і навпаки.</p>
+
+				<div class="container">
+					<div class="scene">
+						<div class="box rotate-x-02">rotateX(60deg)</div>
+					</div>
+
+					<div class="scene">
+						<div class="box rotate-y-02">rotateY(60deg)</div>
+					</div>
+				</div>
+
+				<br />
+				<p>використання відразу на декількох елементах - у кожного створюється своя сцена і перспектива, тобто глядач ніби дивиться на кожен елемент з різної точки</p>
+				<div class="scene-03">
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+					<div class="box-03"></div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Властивість perspective</h2>
+				<p>
+					Дозволяє створити однакову перспективу цілій групі елементів на сцені. Ця властивість задається спільному контейнеру групи елементів (сцені), у нашому випадку -
+					div.scene.
+				</p>
+				<div class="scene-04">
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+					<div class="box-04"></div>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>

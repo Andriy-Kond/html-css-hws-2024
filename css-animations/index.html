@@ -22,6 +22,114 @@
 					>, рекомендується використовувати лише opacity і transform.
 				</p>
 			</section>
+
+			<section>
+				<h2>Оголошення анімації</h2>
+				<pre>
+          @keyframes changeBgColor {
+              0%   { background-color: teal;         }
+              50%  { background-color: orange;       }
+              100% {  background-color: deepskyblue; }
+          }
+        </pre>
+			</section>
+
+			<section>
+				<h2>animation-duration</h2>
+
+				<h1>The animation starts when hovering over an element</h1>
+				<div class="box"></div>
+			</section>
+
+			<section>
+				<p><strong>animation-delay</strong> Встановлює затримку перед початком анімації в секундах або мілісекундах.</p>
+
+				<pre>
+          .box { 
+            animation-name: changeBgColor;      // name
+            animation-duration: 3000ms;         // duration
+            animation-timing-function: linear;  // fn
+            animation-delay: 1000ms; }          // delay
+        </pre>
+			</section>
+
+			<section>
+				<p><strong>animation-iteration-count</strong> Встановлює кількість повних повторень анімації.</p>
+				<img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Sun" width="300" height="300" />
+			</section>
+
+			<section>
+				<h2>animation-direction</h2>
+				<div class="container-box-02">
+					<div class="box-02">normal</div>
+					<div class="box-02">reverse</div>
+					<div class="box-02">alternate</div>
+					<div class="box-02">alternate-reverse</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>animation-fill-mode</h2>
+
+				<p>що відбувається зі стилями елемента до початку анімації і після її завершення</p>
+
+				<pre>
+none - стилі анімації впливають на елемент тільки під час анімації. До і після анімації елемент знаходиться у своєму початковому стані. Значення за замовчуванням.
+forwards - стилі, застосовані в кінці анімації, залишаються на елементі після її завершення.
+backwards - стартові стилі анімації будуть застосовані до елемента ще до старту анімації.
+both - поєднує forwards і backwards, стилі застосовуються до і після анімації.
+        </pre>
+				<div class="container">
+					<div class="box-03">none</div>
+					<div class="box-03">forwards</div>
+					<div class="box-03">backwards</div>
+					<div class="box-03">both</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>animation-play-state</h2>
+
+				<h3>Animation pauses when hovering over an element</h3>
+				<p>
+					Дозволяє призупинити відтворення анімації. За замовчуванням встановлено значення running. Якщо встановити значення paused, наприклад при :hover, анімація буде припинена,
+					доки курсор миші знаходиться над елементом.
+				</p>
+				<div class="box-04"></div>
+			</section>
+
+			<section>
+				<h2>Короткий запис animation</h2>
+				<p>animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state]</p>
+
+				<p>
+					Значення необов'язкових властивостей можна пропустити або поміняти місцями. Виняток становлять властивості duration і delay - значення тривалості анімації завжди повинно
+					зазначатися до затримки. Значення необов'язкових властивостей можна пропустити або поміняти місцями. Виняток становлять властивості duration і delay - значення тривалості
+					анімації завжди повинно зазначатися до затримки.
+				</p>
+
+				<pre>
+.box {
+  animation: magic 2s infinite;
+}
+
+.box {
+  animation: magic 2s 0.5s ease-in-out;
+}
+
+.box {
+  animation: magic 2s ease-in-out 0.5s forwards;
+}
+
+.box {
+  animation: magic 2s forwards infinite ease-out 0.5s;
+}
+
+@keyframes magic {
+  /* ... */
+}
+        </pre>
+			</section>
 		</main>
 
 		<footer></footer>
