@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+			</div>
+		</header>
+
+		<main>
+			<section>
+				<pre>
+					transition-property: властивість
+					transition-duration: час 
+					transition-timing-function: функція розподілу	часу 
+					transition-delay: затримка
+					
+					Короткий запис: transition: [property] [duration] [timing-function] [delay]
+					Кілька властивостей: transition: background-color 500ms linear, transform 500ms ease-in-out;
+			
+				</pre
+				>
+
+				<h2>Властивість transition-property</h2>
+				<div class="box-02"></div>
+
+				<!-- Список властивостей, які можуть бути анімовані  -->
+				<a
+					href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					Список властивостей, які можуть бути анімовані
+				</a>
+			</section>
+
+			<section>
+				<h2>Властивість transition-duration. A transition is triggered when hovering over a container</h2>
+
+				<div class="flex-container">
+					<div class="circle-01">500ms</div>
+					<div class="circle-01">1500ms</div>
+					<div class="circle-01">3000ms</div>
+				</div>
+			</section>
+
+			<section>
+				<!-- функція розподілу часу -->
+				<a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank" rel="noopener noreferrer">
+					функція розподілу часу
+				</a>
+
+				<h2>Властивість transition-timing-function. A transition is triggered when hovering over a container</h2>
+
+				<div class="container">
+					<div class="circle-02"></div>
+					<div class="circle-02"></div>
+					<div class="circle-02"></div>
+					<div class="circle-02"></div>
+					<div class="circle-02"></div>
+					<div class="circle-02"></div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Властивість transition-delay</h2>
+				<div class="box-03"></div>
+			</section>
+
+			<section>
+				<h2>Сценарії з transition-delay</h2>
+				<p>
+					Спочатку блок повинен змінити колір, і тільки після цього почати обертатися. Для цього треба вказати перехід
+					обертання і почекати стільки ж часу, скільки займає попередня анімація (зміни кольору фону - 500ms).
+				</p>
+				<pre>
+					transition: background-color 500ms linear, transform 500ms ease-in-out 500ms;
+				</pre
+				>
+
+				<div class="box-04"></div>
+			</section>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
