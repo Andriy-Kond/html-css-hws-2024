@@ -177,7 +177,6 @@
 }
 .box-03:nth-child(1) {
 	/*   transform: translateX(50px); */
-
 	animation: animateX50 3000ms infinite 1000ms;
 	background-color: orange;
 }
@@ -188,7 +187,6 @@
 
 .box-03:nth-child(2) {
 	/*   transform: translateY(110px); */
-
 	animation: animateY110 3000ms infinite 1000ms;
 	background-color: #03a9f4;
 }
@@ -199,7 +197,6 @@
 
 .box-03:nth-child(3) {
 	/*   transform: translate(-50px, -100px); */
-
 	animation: animateX50Y100 3000ms infinite 1000ms;
 	background-color: palevioletred;
 }

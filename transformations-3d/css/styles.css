@@ -1,0 +1,110 @@
+/** Change icon on button */
+.btn {
+	position: relative;
+	display: inline-flex;
+	border: none;
+	margin: 0;
+	padding: 10px 30px;
+	border-radius: 3px;
+	background-color: #0bbebe;
+	color: #fff;
+	font: inherit;
+	cursor: pointer;
+
+	overflow: hidden;
+	transition: background-color 250ms ease, color 250ms ease 250ms;
+}
+.btn::before,
+.btn::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	transition: transform 250ms ease;
+}
+
+.btn::before {
+	margin-right: 10px;
+
+	/* background-color: #e41313; */
+	background-image: url("../../images-examples/images/picachu.png");
+}
+
+.btn:hover::before,
+.btn:focus::before {
+	transform: translateY(-35px);
+}
+
+.btn::after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(calc(-50% + 35px));
+	left: 30px;
+
+	/* background-color: #2813e4; */
+	background-image: url("../../images-examples/images/Sheep.png");
+
+	/* transform: translateY(35px); */
+}
+
+.btn:hover::after,
+.btn:focus::after {
+	transform: translateY(-50%);
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #28a743;
+	color: rgb(125, 229, 233);
+}
+
+/* /Change icon on button */
+
+/** Menu underline */
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+.menu-item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.menu-link {
+	position: relative;
+
+	outline: 1px solid black;
+	display: block;
+	text-decoration: none;
+	color: currentColor;
+
+	padding: 10px 20px;
+	/* border-bottom: 2px solid red; */
+}
+
+.menu-link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(24, 201, 245);
+
+	transform: scaleX(0);
+	transform-origin: center left; /* зміна початкової точки трансформування */
+	transition: transform 250ms ease;
+}
+
+.menu-link:hover::after {
+	/* background-color: #28a743; */
+	transform: scaleX(1);
+}
+/* /Menu underline */
