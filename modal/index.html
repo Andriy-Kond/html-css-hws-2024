@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="main-box">
+				<a class="main-link" href="../index.html">На головну</a>
+			</div>
+		</header>
+		<main>
+			<section>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quam consectetur veritatis obcaecati, labore sed dolorem sapiente earum quisquam provident
+					reiciendis suscipit, quod dolorum deleniti saepe voluptate quidem quos repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dicta unde voluptatem
+					accusamus sunt, voluptatum modi. Reiciendis mollitia iste error qui eos magnam. Repudiandae quam et adipisci. Deserunt, laboriosam ab? Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Cum aliquam voluptates tempora autem ex quod sint animi! Nisi dolores ab, ratione rerum doloribus facere deserunt perferendis qui adipisci
+					ipsam earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nemo sunt delectus atque, temporibus ex quas sed expedita. Maiores assumenda, deserunt
+					voluptate laudantium voluptatum maxime aperiam aspernatur libero ullam sequi!
+				</p>
+				<button class="open-modal" data-open-modal>open modal</button>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae facere cumque doloribus fuga aliquam incidunt, exercitationem recusandae eaque soluta magni. Quis
+					voluptates inventore, blanditiis sunt quaerat deserunt doloribus. Ullam, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est iste id praesentium!
+					Ducimus, nemo vero! Odit, accusamus aperiam dolore sit consectetur delectus saepe repellendus suscipit velit vitae est cum. Lorem, ipsum dolor sit amet consectetur
+					adipisicing elit. Expedita at eaque iure vero in earum perspiciatis veritatis dolorem repellendus dignissimos voluptatibus quae, nemo repellat dicta aliquid incidunt
+					minima deleniti magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eligendi ducimus incidunt laborum quasi optio, tempore odio excepturi quidem
+					asperiores saepe eos tenetur necessitatibus autem laboriosam quae fuga officiis quia.
+				</p>
+			</section>
+
+			<section>
+				<div class="backdrop is-hidden" data-backdrop>
+					<div class="modal">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis debitis quibusdam doloremque perspiciatis distinctio consequuntur nobis ipsa dolore earum quisquam
+							qui eveniet maxime ad, numquam libero quos, veritatis accusantium similique tempora nemo? Quo consequuntur iusto eius aut facilis doloribus aliquam quae vitae dolor
+							voluptatibus? Accusamus corrupti cumque odio illo.
+						</p>
+						<button data-close-modal>close modal</button>
+					</div>
+				</div>
+			</section>
+
+			<script>
+				const refs = {
+					openModalBtn: document.querySelector("[data-open-modal]"),
+					closeModalBtn: document.querySelector("[data-close-modal]"),
+					backdrop: document.querySelector("[data-backdrop]"),
+				};
+
+				refs.openModalBtn.addEventListener("click", toggleModal);
+				refs.closeModalBtn.addEventListener("click", toggleModal);
+
+				refs.backdrop.addEventListener("click", logBackdropClick);
+
+				function toggleModal() {
+					refs.backdrop.classList.toggle("is-hidden");
+				}
+
+				function logBackdropClick() {
+					console.log("It is click to backdrop");
+				}
+			</script>
+		</main>
+		<footer></footer>
+	</body>
+</html>
