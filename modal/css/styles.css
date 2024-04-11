@@ -1,3 +1,8 @@
+body.is-hidden {
+	/* заборона cкролу позаду модального вікна*/
+	overflow: hidden;
+}
+
 .backdrop {
 	position: fixed;
 	top: 0;
